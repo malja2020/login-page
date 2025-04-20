@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auth UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="popup" id="popup">
+    <p id="popup-message"></p>
+  </div>
+
+  <div class="container">
+    <div class="form-box">
+      <form id="login-form" class="form active">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <span class="error" id="login-email-error"></span>
+        <input type="password" id="login-password" placeholder="Password">
+        <span class="error" id="login-pass-error"></span>
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="register-form" class="form">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username">
+        <span class="error" id="register-user-error"></span>
+        <input type="email" id="register-email" placeholder="Email">
+        <span class="error" id="register-email-error"></span>
+        <input type="password" id="register-password" placeholder="Password">
+        <span class="error" id="register-pass-error"></span>
+        <button type="submit">Register</button>
+      </form>
+
+      <div class="toggle-buttons">
+        <button id="show-login">Login</button>
+        <button id="show-register">Register</button>
+      </div>
+    </div>
+    <div class="watermark"><strong>Created By: </strong>Earl Clarence P. Camero</div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
